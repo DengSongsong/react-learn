@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 4 versions",
+            "Firefox ESR",
+            "> 1%",
+            "not ie < 9",
+            "iOS >= 8",
+            "Android >= 4"
+          ]
+        },
+        "debug": false,
+        "include": [],
+        "useBuiltIns": true,
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "plugins": ["transform-decorators-legacy", "syntax-dynamic-import"]
+}
