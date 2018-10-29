@@ -1,0 +1,52 @@
+@import '../../../common/style/variable.less';
+@import '../../../common//style/mixins.less';
+.item {
+  width: 100%;
+  height: 1.52rem /* 114/75 */;
+  display: flex;
+  justify-content: space-between;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .desc {
+    width: 3.733333rem /* 280/75 */;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .school {
+      margin-bottom: .186667rem /* 14/75 */;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: @font-size-large;
+      color: @color-text;
+    }
+    .vote {
+      font-size: @font-size-medium-s;
+      color: @color-text;
+    }
+  }
+  .itemRank {
+    position: relative;
+    width: 2.986667rem /* 224/75 */;
+    height: .746667rem /* 56/75 */;
+    border-radius:  .533333rem /* 40/75 */;
+    line-height: .746667rem /* 56/75 */;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .773333rem /* 58/75 */;
+    box-sizing: border-box;
+    font-size: @font-size-medium-x;
+    .btnBackground-highlight();
+    &.disbaled {
+      opacity: .4;
+    }
+    .crown {
+      width: 1.84rem /* 138/75 */;
+      height: .666667rem /* 50/75 */;
+      position: absolute;
+      right: -.666667rem /* 50/75 */;
+      top: -1.133333rem /* 85/75 */
+    }
+  }
+}

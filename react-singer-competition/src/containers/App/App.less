@@ -1,0 +1,62 @@
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem /* 750/75 */;
+  height: 100%;
+  background: url('../../common/images/background-index.png') no-repeat;
+  background-size: 100% 100%;
+  .log {
+    width: 3.6rem /* 270/75 */;
+    margin-left: .56rem /* 42/75 */;
+    padding-top: .666667rem /* 50/75 */;
+    img {
+      width: 100%;
+    }
+  }
+  .theme {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+    }
+  }
+  .cd {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .trans {
+      animation: trans 5s linear infinite;
+    }
+    @keyframes trans {
+      0% {
+        opacity: 1;
+        transform: translateY(20px)
+      }
+      50% {
+        opacity: .5;
+        transform: translateY(0px)
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(20px)
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 7.093333rem /* 532/75 */;
+    img {
+      width: 100%;
+    }
+  }
+}

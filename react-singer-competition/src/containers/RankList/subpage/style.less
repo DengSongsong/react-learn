@@ -1,0 +1,57 @@
+@import '../../../common/style/variable.less';
+@import '../../../common/style/mixins.less';
+.list {
+  .wrapper();
+  display: flex;
+  flex-direction: column;
+  .tabs {
+    // float: left;
+    width: 100%;
+    height: .64rem /* 48/75 */;
+    flex: 0 0 .64rem /* 48/75 */;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .tab {
+      width: 2.266667rem /* 170/75 */;
+      height: .64rem /* 48/75 */;
+      line-height: .64rem /* 48/75 */;
+      border-radius: .533333rem /* 40/75 */;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: @font-size-medium-s;
+      font-weight: 900;
+      .btnBackground();
+      &.active {
+        .btnBackground-highlight();
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+  }
+}
+.bottomBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.893333rem /* 142/75 */;
+  line-height: 1.893333rem /* 142/75 */;
+  background: @color-background;
+  text-align: center;
+  .btn {
+    display: inline-block;
+    width: 3.093333rem /* 232/75 */;
+    height: .88rem /* 66/75 */;
+    line-height: .88rem /* 66/75 */;
+    border-radius: 1.653333rem /* 124/75 */;
+    font-size: @font-size-large;
+    font-weight: bold;
+    background-color: @color-button-background;
+    box-shadow: inset 0px -13px 17px 0px @color-button-background-m;
+  }
+}

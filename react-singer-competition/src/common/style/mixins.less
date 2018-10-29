@@ -1,0 +1,30 @@
+@import './variable.less';
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: @color-background;
+}
+.wrapper {
+  position: absolute;
+  top: 4.426667rem /* 332/75 */;
+  bottom: 1.893333rem /* 142/75 */;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 .693333rem /* 52/75 */ 0 .706667rem /* 53/75 */;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.btnBackground {
+  background-color: @color-button-background;
+  box-shadow: inset 0px -8px 17px 0px @color-button-background-m;
+}
+.btnBackground-highlight {
+  background-color: @color-button-highlight-background;
+  box-shadow: inset 0px -8px 17px 0px @color-button-highlight-background-m;
+}
